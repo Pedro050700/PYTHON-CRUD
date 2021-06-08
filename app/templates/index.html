@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<<<<<<< HEAD
+<html lang="pt-br">
+=======
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+>>>>>>> 1e1ef04... first commit
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crud com python</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+          crossorigin="anonymous">
+</head>
+<body>
+<div class="col-8 m-auto pt-2 pb-2 text-center">
+    <h1>Crud com Python</h1>
+</div>
+<div class="col-8 m-auto pt-2 pb-2 text-center">
+
+    <a href="/form" class="btn btn-success text-center">Adicionar</a>
+
+</div>
+<div class="col-8 m-auto pt-2 pb-3 text-center">
+</div>
+<<<<<<< HEAD
+=======
+<div>
+>>>>>>> 1e1ef04... first commit
+<table class="table table-dark table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome do funcionário</th>
+        <th scope="col">cargo</th>
+        <th scope="col">nível</th>
+        <th scope="col">Ações</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    {%for dbs in db%}
+    <tr>
+        <th>{{dbs.id}}</th>
+        <td>{{dbs.Nome}}</td>
+        <td>{{dbs.Cargo}}</td>
+        <td>{{dbs.Nivel}}</td>
+        <td>
+            <a href="/view/{{dbs.id}}" class="btn btn-dark">Visualizar</a>
+            <a href="/edit/{{dbs.id}}" class="btn btn-primary">Editar</a>
+<<<<<<< HEAD
+            <a href="" class="btn btn-danger">Deletar</a>
+=======
+            <a href="/delete/{{dbs.id}}" class="btn btn-danger btnDel">Deletar</a>
+>>>>>>> 1e1ef04... first commit
+
+
+        </td>
+
+    </tr>
+    {%endfor%}
+
+    </tbody>
+</table>
+<<<<<<< HEAD
+=======
+</div>
+    {% load static %}
+    <script src="{% static 'javascript.js' %}"></script>
+>>>>>>> 1e1ef04... first commit
+</body>
+</html>
